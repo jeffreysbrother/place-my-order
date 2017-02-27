@@ -11,8 +11,8 @@
   "scripts": {
     "api": "place-my-order-api --port 7070",
     "test": "testee src/test.html --browsers firefox --reporter Spec",
-    "start": "done-serve --port 8080",
-    "develop": "done-serve --develop --port 8080",
+    "start": "done-serve --proxy http://localhost:7070 --port 8080",
+    "develop": "done-serve --develop --proxy http://localhost:7070 --port 8080",
     "document": "documentjs",
     "build": "node build"
   },
@@ -43,6 +43,7 @@
     "done-serve": "^0.2.0",
     "generator-donejs": "^0.9.0",
     "jquery": "~2.2.1",
+    "place-my-order-assets": "^0.1.7",
     "steal": "^0.16.0"
   },
   "devDependencies": {
