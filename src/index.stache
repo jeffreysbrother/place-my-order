@@ -6,7 +6,7 @@
     <can-import from="place-my-order/styles.less!" />
     <can-import from="place-my-order/app" export-as="viewModel" />
 
-    <h1>{{message}}</h1>
+    <h1>{{message}}. This is a {{message1}}.</h1>
 
     {{#switch env.NODE_ENV}}
       {{#case "production"}}
